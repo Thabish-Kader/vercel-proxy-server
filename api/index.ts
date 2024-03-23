@@ -7,7 +7,7 @@ const PORT = 8000;
 app.use(
   "/api",
   createProxyMiddleware({
-    target: "http://localhost:4000",
+    target: "http://172.16.0.78:4000",
     changeOrigin: true,
   })
 );
