@@ -1,5 +1,9 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
+export default async function handler(req, res) {
+    res.status(200).send(`Hello world!`);
+  }
+  
 const apiProxy = createProxyMiddleware({
   target: "http://localhost:8080",
   changeOrigin: true,
