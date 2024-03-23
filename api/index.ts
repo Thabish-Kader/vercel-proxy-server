@@ -7,7 +7,7 @@ const PORT = 8000;
 app.use(
   "/api",
   createProxyMiddleware({
-    target: "http://172.16.0.78:4000",
+    target: "https://be11-45-117-30-130.ngrok-free.app",
     changeOrigin: true,
   })
 );
