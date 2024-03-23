@@ -10,7 +10,7 @@
     "lint": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit",
-    "vercel-build":"vercel build"
+    "vercel-build":"echo hello"
   },
   "keywords": [],
   "author": "",
