@@ -1,3 +1,4 @@
+// this file is for testing purposes in local development go to api/index.ts for production code
 import express from "express";
 import { createProxyMiddleware } from "http-proxy-middleware";
 
