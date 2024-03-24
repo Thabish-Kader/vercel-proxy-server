@@ -7,7 +7,6 @@ app.use(
   "/api",
   createProxyMiddleware({
     target: "https://22dc-115-96-183-112.ngrok-free.app",
-    changeOrigin: false,
   })
 );
 
