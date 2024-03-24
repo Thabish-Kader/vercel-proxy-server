@@ -5,6 +5,15 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 const app = express();
 const PORT = 8000;
 
+app.use((req, res, next) => {
+  console.log(
+    `[${new Date().toLocaleString()}] ${req.method} ${req.url} ${req.get(
+      "User-Agent"
+    )}`
+  );
+  next();
+});
+
 app.use(
   "/api",
   createProxyMiddleware({
