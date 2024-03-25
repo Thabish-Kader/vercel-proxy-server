@@ -15,7 +15,7 @@ app.use(apiLimiter);
 app.use(
   "/api",
   createProxyMiddleware({
-    target: "https://22dc-115-96-183-112.ngrok-free.app",
+    target: "https://7893-27-4-62-5.ngrok-free.app",
     changeOrigin: true,
   })
 );
